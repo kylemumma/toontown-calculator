@@ -20,6 +20,7 @@ function MainScreen(props) {
                 <Col lg="2"><Button imgUrl={button6}/></Col>
             </Row>
         </Container>
+    );
 }
 
 export default MainScreen;

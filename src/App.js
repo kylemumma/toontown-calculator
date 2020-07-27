@@ -1,8 +1,10 @@
 import React from 'react';
+import MainScreen from './components/MainScreen.js';
+
 
 function App() {
   return (
-    <h1>hi</h1>
+    <MainScreen />
   );
 }
 

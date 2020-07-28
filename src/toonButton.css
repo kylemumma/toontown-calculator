@@ -1,0 +1,22 @@
+button {
+    background: none;
+    border: none;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+button img {
+    /* width will always be 300px unless device is too small then
+    it will simply be as wide as it can be */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+button img:hover {
+    transform: scale(1.03);
+    transition: ease 0.1s;
+}

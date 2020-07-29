@@ -7,6 +7,10 @@ import ToonAccuracyCalculator from './components/ToonAccuracyCalculator.js'
 import DoubleLureCalculator from './components/DoubleLureCalculator.js'
 import CogDamageCalculator from './components/CogDamageCalculator.js'
 import ErrorPage from './components/ErrorPage.js'
+import SellbotInfo from './components/SellbotInfo.js'
+import CashbotInfo from './components/CashbotInfo.js'
+import LawbotInfo from './components/LawbotInfo.js'
+import BossbotInfo from './components/BossbotInfo.js'
 
 
 class App extends React.Component {
@@ -18,6 +22,9 @@ class App extends React.Component {
     }
   }
 
+  /*
+  updates the current states scene to the given scene number
+  */
   changeScene = (sceneNumber) => {
     this.setState({
       scene: sceneNumber
@@ -37,7 +44,23 @@ class App extends React.Component {
       case 2: // Cog Facility Info
         return (
           <CogFacilityInfo onClick={this.changeScene} />
-        ); 
+        );
+      case 2.1: // (Subpage of 2) Sellbot Info Page
+        return (
+          <SellbotInfo onClick={this.changeScene} />
+        );
+      case 2.2: // (Subpage of 2) Cashbot Info Page
+        return (
+          <CashbotInfo onClick={this.changeScene} />
+        );
+      case 2.3: // (Subpage of 2) Lawbot Info Page
+        return (
+          <LawbotInfo onClick={this.changeScene} />
+        );
+      case 2.4: // (Subpage of 2) Bossbot Info Page
+        return (
+          <BossbotInfo onClick={this.changeScene} />
+        );
       case 3: // Ultimate Anti-Cog Tool
         return (
           <UltimateAntiCogTool onClick={this.changeScene} />

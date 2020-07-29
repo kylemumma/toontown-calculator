@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import './../stylesheets/mainScreen.css';
+import { Container, Row, Col } from 'react-bootstrap';
 import ToonButton from './ToonButton.js'
 import button1 from "./../ToontownMenu/Buttons/Button 1.png";
 import button2 from "./../ToontownMenu/Buttons/Button 2.png";
@@ -11,6 +12,12 @@ import button6 from "./../ToontownMenu/Buttons/Button 6.png";
 function MainScreen(props) {
     return (
         <Container>
+            <Row className="justify-content-center">
+                <Col className="text-center mt-4">
+                    <h1>Ultimate Toontown Calculator</h1>
+                </Col>
+            </Row>
+
             <Row className="justify-content-center">
                 <Col sm="12" md="6" lg="4" className="text-center my-4">
                     <ToonButton url={button1} alt={"Toon Damage Calculator"} onClick={() => {

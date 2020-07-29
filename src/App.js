@@ -6,6 +6,7 @@ import UltimateAntiCogTool from './components/UltimateAntiCogTool.js'
 import ToonAccuracyCalculator from './components/ToonAccuracyCalculator.js'
 import DoubleLureCalculator from './components/DoubleLureCalculator.js'
 import CogDamageCalculator from './components/CogDamageCalculator.js'
+import ErrorPage from './components/ErrorPage.js'
 
 
 class App extends React.Component {
@@ -52,7 +53,11 @@ class App extends React.Component {
       case 6: // Cog Damage Calculator
         return (
           <CogDamageCalculator />
-        ); 
+        );
+      default:
+        return (
+          <ErrorPage />
+        );
     }
   }
 }

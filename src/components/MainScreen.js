@@ -1,5 +1,5 @@
 import React from 'react';
-import './../stylesheets/mainScreen.css';
+import './../stylesheets/main.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import ToonButton from './ToonButton.js'
 import button1 from "./../ToontownMenu/Buttons/Button 1.png";

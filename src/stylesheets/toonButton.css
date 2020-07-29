@@ -15,7 +15,6 @@ button img {
     height: auto;
 }
 
-
 button img:hover {
     transform: scale(1.03);
     transition: ease 0.1s;

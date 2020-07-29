@@ -32,27 +32,27 @@ class App extends React.Component {
         );
       case 1: // Toon Damage Calculator
         return (
-          <ToonDamageCalculator />
+          <ToonDamageCalculator onClick={this.changeScene} />
         ); 
       case 2: // Cog Facility Info
         return (
-          <CogFacilityInfo />
+          <CogFacilityInfo onClick={this.changeScene} />
         ); 
       case 3: // Ultimate Anti-Cog Tool
         return (
-          <UltimateAntiCogTool />
+          <UltimateAntiCogTool onClick={this.changeScene} />
         ); 
       case 4: // Toon Accuracy Calculator
         return (
-          <ToonAccuracyCalculator />
+          <ToonAccuracyCalculator onClick={this.changeScene} />
         ); 
       case 5: // Double Lure Calculator
         return (
-          <DoubleLureCalculator />
+          <DoubleLureCalculator onClick={this.changeScene} />
         ); 
       case 6: // Cog Damage Calculator
         return (
-          <CogDamageCalculator />
+          <CogDamageCalculator onClick={this.changeScene} />
         );
       default:
         return (
